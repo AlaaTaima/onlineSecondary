@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background: #E84E0C;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background: transparent;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #ffb900;
+    border-radius: 5px;
+}
+
+body {
+    background: #fff;
+    font-family: 'Tajawal', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgb(255, 187, 0), rgb(232, 78, 12, 0.6)) ,url(imgs/book1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header__nav {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.nav__logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav__logo i {
+    color: #fff;
+    font-size: 50px;
+    margin-left: 15px; 
+}
+
+.nav__logo h3 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.nav__logo h3 span {
+    color: #E84E0C;
+}
+
+.nav__list {
+    list-style: none;
+}
+
+.nav__item {
+    display: inline-block;
+}
+
+.nav__link {
+    color: #fff;
+    margin: 0 15px;
+    font-size: 17px;
+    font-weight: 800;
+    padding: 5px 8px;
+    transition: all .3s;
+    border: 3px solid transparent;
+    border-radius: 25px;
+}
+
+.nav__link:hover {
+    border: 3px solid #E84E0C;
+}
+
+.nav__link.active {
+    border: 3px solid #E84E0C;
+}
+
+.header__banner {
+    display: flex;
+    height: 80vh;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-box h6 {
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+.text-box h1 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 50px;
+    letter-spacing: 3px;
+    z-index: 3;
+    line-height: 1;
+}
+
+.text-box h1 span {
+    background: #E84E0C;
+    z-index: 1;
+}
+
+.text-box p {
+    line-height: 1.5;
+    color: #fff; 
+}
+
+.btn {
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 8px 17px;
+    transition: all 0.5s;
+    font-weight: 800;
+}
+
+.primary-btn {
+    border: 2px solid #E84E0C;
+    background: #fff;
+    color: #E84E0C;
+   
+}
+
+.primary-btn:hover {
+    border: 2px solid #fff;
+    background: #E84E0C;
+    color: #fff;
+}
+
+.secondary-btn {
+    border: 2px solid white;
+    background: #E84E0C;
+    color: #fff;
+}
+
+.secondary-btn:hover {
+    border: 2px solid #E84E0C;
+    background: #fff;
+    color: #E84E0C;
+}
+

@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background: #E84E0C;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background: transparent;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #E84E0C;
+    border-radius: 5px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background: #fff;
+    font-family: 'Tajawal', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgb(255, 187, 0), rgb(232, 78, 12, 0.6)) ,url(../imgs/book1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.header__nav {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.scroll-link {
+    background: #E84E0C;
+    position: fixed;
+    bottom: 30px;
+    right: 25px;
+    width: 35px;
+    height: 35px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 0.5s;
+    z-index: 1;
+    border: 2px solid white;
+}
+.nav__logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav__logo i {
+    color: #fff;
+    font-size: 50px;
+    margin-left: 15px; 
+}
+
+.nav__logo h3 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.nav__logo h3 span {
+    color: #E84E0C;
+}
+
+.nav__list {
+    list-style: none;
+}
+
+.nav__item {
+    display: inline-block;
+}
+
+.nav__link {
+    color: #fff;
+    margin: 0 15px;
+    font-size: 17px;
+    font-weight: 800;
+    padding: 5px 8px;
+    transition: all .3s;
+    border: 3px solid transparent;
+    border-radius: 25px;
+}
+
+.nav__link:hover {
+    border: 3px solid #E84E0C;
+}
+
+.nav__link.active {
+    border: 3px solid #E84E0C;
+}
+.subject__father{
+    width: 30px;
+    height: 30px;
+    padding: 2.5% 30px 0px 0px;
+}
+.subject{
+    font-size: 30px;
+    margin: auto;
+    background-color: white;
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
+    color: #E84E0C;
+    padding-right: 15px;
+    border: 2px solid #E84E0C;
+    transition: 0.25s;
+}
+.subject:hover{
+    background-color: #E84E0C;
+    color: white;
+    border: 2px solid white;
+}
+.books{
+    margin-top: 70px;
+    width: 25vh;
+    height: 27vh;
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+    margin-right: 170px ;
+    /* margin-bottom: 5px; */
+    display: inline;
+    border: 3.5px solid #E84E0C;
+    border-radius: 10px;
+}
+.math{
+    background-image:  linear-gradient(rgba(210, 117, 63, 0.9), rgba(255, 187, 0, 0.66)), url(backgrounds/math.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.math__div{
+    padding-top: 8%;
+    padding-right: 35px; 
+}
+.math__subject{
+    color: #E84E0C;
+    background-color: white;
+    width: 135px ;
+    padding: 8px;
+    border: 2px solid #E84E0C;
+    border-radius: 8px;
+    font-size: 30px
+}
+.math__subject:hover{
+    background-color: #E84E0C;
+    color: white;
+    border: 2px solid white;
+}
+.problem{
+    height: 90px;
+    width: 270px;
+    line-height: 90px;
+    background-color: #E84E0C ;
+    color: white ;
+    text-align: center;
+    border: 2px solid white ;
+    border-radius: 8px;
+    margin-right: 550px;
+    margin-top:150px; 
+    font-size: 30px;
+}
+.arabic{
+    background-image:  linear-gradient(rgba(210, 117, 63, 0.9), rgba(255, 187, 0, 0.66)), url(backgrounds/arabic.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.arabic__div{
+    padding-top: 8%;
+    padding-right: 35px; 
+}
+.arabic__subject{
+    color: #E84E0C;
+    background-color: white;
+    width: 135px ;
+    padding: 8px;
+    border: 2px solid #E84E0C;
+    border-radius: 8px;
+    font-size: 30px;
+    display: inline;
+}
+.arabic__subject:hover{
+    background-color: #E84E0C;
+    color: white;
+    border: 2px solid white;
+}
+.islamic{
+    background-image:  linear-gradient(rgba(210, 117, 63, 0.9), rgba(255, 187, 0, 0.66)), url(backgrounds/islamic.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.islamic__div{
+    padding-top: 8%;
+    padding-right: 35px; 
+}
+.islamic__subject{
+    color: #E84E0C;
+    background-color: white;
+    width: 135px ;
+    padding: 8px;
+    border: 2px solid #E84E0C;
+    border-radius: 8px;
+    font-size: 30px;
+    display: inline;
+}
+.islamic__subject:hover{
+    background-color: #E84E0C;
+    color: white;
+    border: 2px solid white;
+}
+.history{
+    background-image:  linear-gradient(rgba(210, 117, 63, 0.9), rgba(255, 187, 0, 0.66)), url(backgrounds/history.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.history__div{
+    padding-top: 8%;
+    padding-right: 35px; 
+}
+.history__subject{
+    color: #E84E0C;
+    background-color: white;
+    width: 135px ;
+    padding: 8px;
+    border: 2px solid #E84E0C;
+    border-radius: 8px;
+    font-size: 30px;
+    display: inline;
+}
+.history__subject:hover{
+    background-color: #E84E0C;
+    color: white;
+    border: 2px solid white;
+}
+.physics{
+    background-image:  linear-gradient(rgba(210, 117, 63, 0.9),
+     rgba(255, 187, 0, 0.66)), url(backgrounds/physics1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.physics__div{
+    padding-top: 8%;
+    padding-right: 35px; 
+}
+.physics__subject{
+    color: #E84E0C;
+    background-color: white;
+    width: 135px ;
+    padding: 8px;
+    border: 2px solid #E84E0C;
+    border-radius: 8px;
+    font-size: 30px;
+    display: inline;
+}
+.physics__subject:hover{
+    background-color: #E84E0C;
+    color: white;
+    border: 2px solid white;
+}
+.chemistrey{
+    background-image:  linear-gradient(rgba(210, 117, 63, 0.9),
+     rgba(255, 187, 0, 0.66)), url(backgrounds/chemistry.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.chemistrey__div{
+    padding-top: 8%;
+    padding-right: 35px; 
+}
+.chemistrey__subject{
+    color: #E84E0C;
+    background-color: white;
+    width: 135px ;
+    padding: 8px;
+    border: 2px solid #E84E0C;
+    border-radius: 8px;
+    font-size: 30px;
+    display: inline;
+}
+.chemistrey__subject:hover{
+    background-color: #E84E0C;
+    color: white;
+    border: 2px solid white;
+}
+.biology{
+    background-image:  linear-gradient(rgba(210, 117, 63, 0.9),
+     rgba(255, 187, 0, 0.66)), url(backgrounds/biology.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.biology__div{
+    padding-top: 8%;
+    padding-right: 35px; 
+}
+.biology__subject{
+    color: #E84E0C;
+    background-color: white;
+    width: 135px ;
+    padding: 8px;
+    border: 2px solid #E84E0C;
+    border-radius: 8px;
+    font-size: 30px;
+    display: inline;
+}
+.biology__subject:hover{
+    background-color: #E84E0C;
+    color: white;
+    border: 2px solid white;
+}
+.english{
+    background-image:  linear-gradient(rgba(210, 117, 63, 0.9),
+     rgba(255, 187, 0, 0.66)), url(backgrounds/english.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.english__div{
+    padding-top: 8%;
+    padding-right: 35px; 
+}
+.english__subject{
+    color: #E84E0C;
+    background-color: white;
+    width: 135px ;
+    padding: 8px;
+    border: 2px solid #E84E0C;
+    border-radius: 8px;
+    font-size: 30px;
+    display: inline;
+}
+.english__subject:hover{
+    background-color: #E84E0C;
+    color: white;
+    border: 2px solid white;
+}
